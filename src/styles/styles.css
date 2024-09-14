@@ -1,0 +1,193 @@
+@import "./reset.css";
+@import "./variables.css";
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  min-height: 100vh;
+  background-color: var(--gray-500);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#appContainer {
+  padding: 5.7rem 5.4rem;
+  /* width: 100vw; */
+  /* height: 100vh; */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  align-self: start;
+  width: fit-content;
+  margin-bottom: 4.7rem;
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+header .user-pic > img {
+  width: 6.3rem;
+  height: 6.3rem;
+}
+
+header h1,
+header h2 {
+  color: var(--gray-100);
+}
+
+header h1 {
+  font-weight: 300;
+  font-size: 2.4rem;
+  line-height: 120%;
+}
+
+header h2 {
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 120%;
+
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+header h2 > img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .drinked-water-component {
+  width: 20.8rem;
+  height: 35rem;
+  margin-bottom: 2.7rem;
+}
+
+.input-box {
+  width: 32rem;
+  margin-bottom: 2.7rem;
+}
+
+.input-box .input-wrapper input {
+  width: 100%;
+  height: 0.6rem;
+  color: var();
+  border: none;
+  outline: none;
+}
+
+.input-box .label-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-box .label-wrapper label {
+  font-weight: 500;
+  color: var(--blue);
+  letter-spacing: 3%;
+}
+
+.input-box .label-wrapper span {
+  font-weight: 500;
+  letter-spacing: 3%;
+  color: #4e4964;
+}
+
+.timer-box {
+  margin-bottom: 2.7rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.3rem;
+}
+
+.minutes,
+.hours {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.minutes span,
+.hours span {
+  width: 6.4rem;
+  height: 6.4rem;
+  padding: 1.2rem 0.8rem;
+  background-color: var(--gray-400);
+  font-size: 3.2rem;
+  color: var(--gray-100);
+  border-radius: 1rem;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.minutes span:hover,
+.hours span:hover,
+.minutes span:focus,
+.hours span:focus {
+  border: 0.1rem solid var(--blue);
+}
+
+.minutes .timer-wrapper,
+.hours .timer-wrapper {
+  color: var(--gray-200);
+  font-weight: 500;
+}
+
+.timer-box .wrapper {
+  color: var(--gray-100);
+  font-size: 3.2rem;
+  letter-spacing: 0.3;
+}
+
+.start-timer-btn {
+  width: 32rem;
+  padding-block: 1.6rem;
+  font-weight: 600;
+  font-size: 1.6rem;
+  background-color: var(--blue);
+  color: var(--gray-500);
+  border-radius: 0.6rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  transition: 0.3s;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+}
+
+.start-timer-btn:hover {
+  background-color: var(--dark-blue);
+}
+
+.start-timer-btn > img {
+  width: 2.4rem;
+  height: 2.4rem;
+  color: var(--gray-500);
+}
+
+@media (min-width: 768px) {
+  main {
+    flex-direction: row;
+    gap: 10.2rem;
+  }
+}

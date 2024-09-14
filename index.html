@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--CSS Import-->
+    <link rel="stylesheet" href="src/styles/styles.css" />
+
+    <!--Google Fonts Import-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Javascript Import-->
+    <!-- <script src="src/js/index.js" defer></script> -->
+
+    <title>Drink Water Reminder</title>
+  </head>
+  <body>
+    <div id="appContainer">
+      <header>
+        <div class="user-pic">
+          <img src="./src/img/user.png" alt="User Image" />
+        </div>
+        <div class="greeting-box">
+          <h1>Boa tarde,</h1>
+          <h2>
+            Biro!
+            <img src="./src/img/greeting-emoji.png" alt="Greeting Emoji" />
+          </h2>
+        </div>
+      </header>
+
+      <main>
+        <img
+          src="./src/img/drink-water.png"
+          class="drinked-water-component"
+          alt="Drinked Water Image"
+        />
+
+        <section>
+          <div class="input-box">
+            <div class="label-wrapper">
+              <label for="dailyGoalInput">Meta diária</label>
+              <span>3000ml</span>
+            </div>
+
+            <div class="input-wrapper">
+              <input
+                type="range"
+                name="dailyGoal"
+                id="dailyGoalInput"
+                min="0"
+                max="3000"
+                value="0"
+              />
+            </div>
+          </div>
+
+          <div class="input-box">
+            <div class="label-wrapper">
+              <label for="perTimerQtdInput">Quantidade por timer</label>
+              <span>300ml</span>
+            </div>
+
+            <div class="input-wrapper">
+              <input
+                type="range"
+                name="perTimerQtd"
+                id="perTimerQtdInput"
+                min="0"
+                max="300"
+                value="0"
+              />
+            </div>
+          </div>
+
+          <div class="timer-box">
+            <div class="hours">
+              <span>00</span>
+              <div class="timer-wrapper">h</div>
+            </div>
+            <div class="wrapper">:</div>
+            <div class="minutes">
+              <span>01</span>
+              <div class="timer-wrapper">m</div>
+            </div>
+          </div>
+
+          <button class="start-timer-btn">
+            Começar <img src="./src/img/chevron-left.svg" alt="Left" />
+          </button>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
